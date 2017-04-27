@@ -8,8 +8,8 @@
 #define HOME_SCORE_DEFAULT 0
 #define AWAY_SCORE_DEFAULT 0
 #define TIME_DEFAULT 0
-#define COUNTDOWN_DEFAULT 1800000
-#define INTERVAL 10
+#define COUNTDOWN_DEFAULT 2700000
+#define INTERVAL 83
 
 static Window *window;
 static TextLayer *text_home_score_layer;
@@ -247,18 +247,21 @@ static void handle_init(void) {
 	text_stopwatch_layer = text_layer_create(GRect(7, 51, 144-14, 168-92));
 	text_layer_set_text_color(text_stopwatch_layer, GColorWhite);
 	text_layer_set_background_color(text_stopwatch_layer, GColorClear);
+  text_layer_set_text_alignment(text_stopwatch_layer, GTextAlignmentRight);
 	text_layer_set_font(text_stopwatch_layer, fonts_get_system_font(FONT_KEY_ROBOTO_BOLD_SUBSET_49));
 	layer_add_child(window_layer, text_layer_get_layer(text_stopwatch_layer));
 
 	text_millisecond_layer = text_layer_create(GRect(7, 103, 144-14, 168-92));
 	text_layer_set_text_color(text_millisecond_layer, GColorWhite);
 	text_layer_set_background_color(text_millisecond_layer, GColorClear);
+  text_layer_set_text_alignment(text_millisecond_layer, GTextAlignmentRight);
 	text_layer_set_font(text_millisecond_layer, fonts_get_system_font(FONT_KEY_ROBOTO_CONDENSED_21));
 	layer_add_child(window_layer, text_layer_get_layer(text_millisecond_layer));
 
 	text_countdown_layer = text_layer_create(GRect(7, 38, 144-14, 168-92));
 	text_layer_set_text_color(text_countdown_layer, GColorWhite);
 	text_layer_set_background_color(text_countdown_layer, GColorClear);
+  text_layer_set_text_alignment(text_countdown_layer, GTextAlignmentRight);
 	text_layer_set_font(text_countdown_layer, fonts_get_system_font(FONT_KEY_ROBOTO_CONDENSED_21));
 	layer_add_child(window_layer, text_layer_get_layer(text_countdown_layer));
 
