@@ -1,0 +1,32 @@
+{
+    "author": "PiGuy",
+    "dependencies": {},
+    "keywords": [],
+    "name": "ref-timer",
+    "pebble": {
+        "displayName": "Ref Timer",
+        "enableMultiJS": false,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/menu_icon_ref_timer",
+                    "menuIcon": true,
+                    "name": "IMAGE_MENU_ICON",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite"
+        ],
+        "uuid": "ab0a8c8f-54f8-473e-8b0f-997cfc1b6e07",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
