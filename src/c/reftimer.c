@@ -196,7 +196,7 @@ static void down_single_click_handler(ClickRecognizerRef recognizer, void *conte
 			update_stopwatch();
 		}
 	} else {
-		start_timer(false);
+		reset_timer(false);
 		update_stopwatch();
 	}
 }
