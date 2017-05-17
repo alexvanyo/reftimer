@@ -126,7 +126,7 @@ static void timer_callback(void *data) {
 	}
 
 	if (target_time - elapsed_time <= 60000) {
-		vibes_long_pulse();
+		//vibes_long_pulse();
 	}
 
 	update_timer = app_timer_register(INTERVAL, (AppTimerCallback) timer_callback, NULL);
